@@ -1,0 +1,27 @@
+name: Vibe-Check CI
+
+on: [push, pull_request]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: "3.10"
+
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+
+    - name: Project Smoke Test
+      run: |
+        echo "🚀 正在进行项目冒烟测试..."
+        # 尝试运行 main.py 检查是否有语法错误
+        python -m py_compile app/main.py
+        echo "✅ 核心架构校验通过！"

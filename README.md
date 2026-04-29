@@ -11,7 +11,3 @@ graph LR
   C --> D[Git Repo Generation]
   D --> E[CI/CD Verification]
 
-
-
-
-项目愿景：本项目旨在利用长链推理技术，将开发者难以描述的“设计调性”转化为可运行的代码工程，实现从感性需求到理性架构的零成本飞跃。

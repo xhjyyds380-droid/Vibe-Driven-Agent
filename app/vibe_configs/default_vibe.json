@@ -1,0 +1,18 @@
+{
+  "vibe_name": "Blue Hour Professional",
+  "aesthetic_params": {
+    "theme_color": "#003366",
+    "border_radius": "8px",
+    "font_style": "Inter, sans-serif"
+  },
+  "coding_standards": {
+    "naming_convention": "snake_case",
+    "documentation_level": "verbose",
+    "strict_typing": true
+  },
+  "default_stack": {
+    "frontend": "Next.js",
+    "backend": "FastAPI",
+    "database": "PostgreSQL"
+  }
+}
